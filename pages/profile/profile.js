@@ -1,35 +1,11 @@
-// pages/home/home.js
+// pages/profile/profile.js
 Page({
-  
+
   /**
    * 页面的初始数据
    */
   data: {
-    name:"Coderwhy",
-    age:18,
-    students:[
-      {
-        id:110,
-        name:"123",
-        age:30
-      },
-      {
-        id: 110,
-        name: "123",
-        age: 30
-      },
-      {
-        id: 110,
-        name: "123",
-        age: 30
-      },
-      {
-        id: 110,
-        name: "123",
-        age: 30
-      }
-    ],
-    count:0
+
   },
 
   /**
@@ -86,23 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  handleBtnClick(){
-    //1.错误做法，界面是不会监听数据更新
-    // this.data.count += 1;
-    // console.log(this.data.count);
-    
-    //2.this.setData()
-    this.setData({
-      count:this.data.count + 1
-    })
-  },
-  handleSubtraction(){
-    this.setData({
-      count:this.data.count - 1
-    })
   }
-  //编程范式：
-  //1.命令式编程：原生操作DOM
-  //2.声明式编程：Vue/React/Angular
 })

@@ -1,3 +1,25 @@
 <!--pages/home/home.wxml-->
-<text class='title'>hello world</text>
-<button size='mini'>anniu</button>
+<!-- 1.小程序数据绑定：{{}}->Mustache -->
+<view>hello {{name}}</view>
+<view>我的年龄：{{age+20}}</view>
+
+<!-- 小tip：格式化代码->Alt+Shift+F -->
+
+<!-- 2.列表展示：wx:for-->
+<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
+
+
+<!-- 3.事件监听改变data -->
+<view>当前计数：{{count}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleSubtraction">-</button>
+
+
+<!-- 4.全局配置：app.js -->
+<!-- 4.1.pages页面路径 -->
+<!-- 4.2.windows窗口导航配置 -->
+<!-- 4.3.tabBar底部导航栏配置 -->
+
+
+<!-- 5.局部配置：page.json -->
+<!-- 5.1.page窗口导航配置：不需要再json文件里写windows -->
