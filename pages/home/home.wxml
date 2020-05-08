@@ -23,3 +23,32 @@
 
 <!-- 5.局部配置：page.json -->
 <!-- 5.1.page窗口导航配置：不需要再json文件里写windows -->
+
+
+<!-- 6.小程序双线程：js对象->DOM树->页面渲染的过程 -->
+<!-- 6.1绑定变量时，变量发生变化，会通过diff函数进行对比，将发生改变的变量替换原来的变量，再进行js对象->DOM树->页面渲染的过程 -->
+
+
+<!-- 7.小程序生命周期：详情见app.js -->
+<!-- 7.1 当getUserInfo接口不能使用的时候，用button点击事件获取用户信息 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleUserInfo">获取授权</button>
+<!-- 7.2 open-data展示用户信息-->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<!-- 7.3 总结：获取用户信息的方式-->
+<!-- 7.3.1 wx.getUserInfo -->
+<!-- 7.3.2 button点击获取用户信息 -->
+<!-- 7.3.3 open-data展示用户信息 -->
+
+
+
+<!-- 8.页面生命周期：详情见home.js-->
+<!-- 8.1 监听生命周期函数，发送网络请求，从服务器获取数据 -->
+<!-- 8.2 初始化数据 -->
+<!-- 8.3 监听wxml中相关的一些事件 -->
+<!-- 8.4 监听其他事件 -->
+
+
+<!-- 9.this的指向 -->
+<!-- 9.1 箭头函数的this指向是一层层的想上找的 -->
+<!-- 9.2 不是箭头函数的this指向是undefind，需要先在函数里用变量(多为that,_this)进行保存，才能正确指向 -->
